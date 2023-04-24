@@ -1,0 +1,39 @@
+body{
+    background-color: #1B9AAA;
+    font-size: 18px;
+    font-family: 'Playfair Display', Helvetica, sans-serif;
+}
+#wrapper{
+    background-color: #F8FFE5;
+    margin-left: 4rem;
+    padding: 2rem;
+    border-left: 2px solid #282d2d;
+}
+h1{
+    color: #d70150;
+    margin-bottom: 14px;
+}
+h2, h3{
+    color: #D81159;
+}
+header{
+    margin: 1rem 0;
+}
+main{
+    margin: 1rem 0;
+}
+ol{
+    margin: 12px;
+}
+ul{
+    margin-left: 2rem;
+    margin-top: 10px;
+}
+p{
+    margin-left: 2rem;
+}
+footer{
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 2rem 4rem 0;
+}

@@ -1,0 +1,230 @@
+*{
+    font-family: 'Playfair Display', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e1e9cd;
+    opacity: 1;
+    background-image: radial-gradient(#F8FFE5 1.0px, #e1e9cd 1.0px);
+    background-size: 18px 18px;
+}
+/*Main sections for layout */
+#form{
+    width: 100%;
+    background-color: #1B9AAA;
+    opacity: 1;
+    background-image:  linear-gradient(#148593 1.1px, transparent 1.1px), linear-gradient(to right, #148593 1.1px, #1B9AAA 1.1px);
+    background-size: 22px 22px;
+    overflow-x: hidden;
+    border-bottom: 1px solid #353535;
+    padding-bottom: 1rem;
+}
+#gallery{
+    margin: 0;
+}
+
+/* Header */
+header{
+    margin: 10px 0;
+ }
+ 
+ header h1{
+    color:#8F2D56;
+    text-align:center;
+    text-shadow: -1px -1px 0 #ede6e6,
+    1px -1px 0 #ede6e6,
+    -1px 1px 0 #ede6e6,
+    1px 1px 0 #ede6e6;
+    font-size: 10vw;
+    padding-top: 10px;
+    font-family: 'Bangers', sans-serif;
+ }
+ /* Footer */
+footer{
+    text-align: center;
+    width: 100%;
+    background-color: #06D6A0;
+    padding: 15px 0;
+    border-top: 1px solid #353535;
+    margin-top: 2rem;
+}
+footer p{
+    margin: 1rem;
+}
+/* Container for searching widgets */
+ #container{
+     margin: 20px;
+     padding: 30px 20px;
+     border: 2px solid #353535;
+     border-radius: 10px;
+     display: flex;
+     flex-flow: row wrap;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+     background-color: #F8FFE5;
+ }
+ /* Widgets for search */
+ .widget{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+ }
+ .widget h2{
+    font-size: 14px;
+    text-align: center;
+ }
+ #status{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+ }
+
+ /* Gif content */
+ #loader{
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+ }
+ #content{
+     width: 85%;
+     margin: 0 auto;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+     gap: 10px;
+     text-align: center;
+     justify-content: center;
+ }
+
+ .result img{
+     width: 100%;
+     height: 200px;
+     box-shadow : 0 2px 6px #353535;
+     object-fit: cover;
+ }
+
+ .result{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-self: flex-end;
+     border: solid;
+     border-color: #D81159;
+     background-color: #f3f3e1;
+     padding: 10px;
+     border-radius: 5px;
+     flex-basis: 0;
+ }
+ .result span{
+     padding: 5%;
+ }
+
+ h2{
+     text-align: center;
+ }
+
+ /* Buttons */
+.pageBtns{
+    background-color: #06D6A0;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4rem;
+    gap: 2rem;
+    height: 100px;
+    border-bottom: 1px solid #353535;
+}
+#next, #previous{
+    width: 100px;
+    height: 50px;
+}
+button{
+    border-color: #353535;
+    background-color: #FFC43D;
+    color: #2e2828;
+    display : inline-block;
+    cursor : pointer;
+
+    border-style : solid;
+    border-width : 1px;
+    border-radius : 50px;
+    padding : 10px 18px;
+    box-shadow : 0 1px 2px #353535;
+    font-size : 10pt;
+    font-weight : bold;
+    text-shadow : 0 1px 1px #353535;
+    text-decoration : none;
+}
+
+button:hover{
+    background: #d8a004;
+}
+
+button:active{
+    background: #d8a004;
+    box-shadow : 0 0 6px #353535;
+}
+
+button:focus {outline:0;}
+
+/* Media queries */
+@media screen and (min-width:800px){
+    #form{
+        height: 100%;
+        width: 30%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        padding: 5%;
+        border-right: 1px solid #353535;
+    }
+    #gallery{
+        margin-left: 40%;
+    }
+    footer{
+        width: 30%;
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        padding: 15px 5%;
+    }
+    header{
+        margin: 4rem 0;
+     }
+     
+     header h1{
+        font-size: 8vw;
+        padding-top: 30px;
+     }
+     #container{
+        margin: 40px auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 2em;
+}
+a:link{
+    color: #2e2828;
+}
+a:visited{
+    color: #2e2828;
+}
+a:hover{
+    color: #f3f3e1;
+    background-color: #D81159;
+}
+a:active{
+    color: #2e2828;
+}

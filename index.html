@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+ 	<title>Gif Finder</title>
+	<link rel = "stylesheet" type="text/css" href = "styles/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+	<script src ="js/main.js"></script>
+</head>
+<body>
+
+<div id="form">
+<!--Header-->
+<header>
+	<h1>Gif Finder</h1>
+</header>
+
+<!--Search Form Section-->
+<div id="container">
+	<!--Search Term Bar-->
+<div class="widget">
+	<h2>Search:</h2>
+	<input list="previousSearches" id="searchterm" type="text" size="20" maxlength="20" />
+	<datalist id="previousSearches">
+	</datalist>
+</div>
+
+<!--Limit Options-->
+<div class="widget">
+	<h2>Limit:</h2>
+	<select id="limit">
+		<option value="5">5</option>
+		<option value="10">10</option>
+		<option value="25" selected>25</option>
+		<option value="50">50</option>
+		<option value="100">100</option>
+	</select>
+</div>
+<!--Search button-->
+<p>
+	<button type="button" id="search">Search!</button>
+
+</p>
+<!--Trending button-->
+<p>
+	<button type="button" id="trending">Trending</button>
+</p>
+
+</div>
+
+<!--Status-->
+<div id="status">
+	Ready to Search!
+</div>
+
+</div>
+
+
+<!--Results Section-->
+<div id="gallery">
+<!--Previous and Next Buttons-->
+<div class="pageBtns">
+	<button type="button" id="previous">Previous</button>
+	<button type="button" id="next">Next</button>
+</div>
+<!--Loader for content-->
+<div id="loader"></div>
+<!--Main gif content-->
+<div id="content"></div>
+	
+</div>
+
+<!--Footer-->
+<footer>
+	<p>&copy; Jennifer Pichardo</p>
+	<a href="doc.html">Documentation</a>
+</footer>
+ 
+</body>
+</html>
