@@ -7,7 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-	<script src ="js/main.js"></script>
+	<script type="module" src ="js/loader.js"></script>
 </head>
 <body>
 
@@ -22,15 +22,15 @@
 	<!--Search Term Bar-->
 <div class="widget">
 	<h2>Search:</h2>
-	<input list="previousSearches" id="searchterm" type="text" size="20" maxlength="20" />
-	<datalist id="previousSearches">
+	<input list="previous-searches" id="search-input" type="text" size="20" maxlength="20" />
+	<datalist id="previous-searches">
 	</datalist>
 </div>
 
 <!--Limit Options-->
 <div class="widget">
 	<h2>Limit:</h2>
-	<select id="limit">
+	<select id="limit-select">
 		<option value="5">5</option>
 		<option value="10">10</option>
 		<option value="25" selected>25</option>
@@ -40,12 +40,12 @@
 </div>
 <!--Search button-->
 <p>
-	<button type="button" id="search">Search!</button>
+	<button type="button" id="search-btn">Search!</button>
 
 </p>
 <!--Trending button-->
 <p>
-	<button type="button" id="trending">Trending</button>
+	<button type="button" id="trending-btn">Trending</button>
 </p>
 
 </div>
@@ -62,8 +62,8 @@
 <div id="gallery">
 <!--Previous and Next Buttons-->
 <div class="pageBtns">
-	<button type="button" id="previous">Previous</button>
-	<button type="button" id="next">Next</button>
+	<button type="button" id="previous-btn">Previous</button>
+	<button type="button" id="next-btn">Next</button>
 </div>
 <!--Loader for content-->
 <div id="loader"></div>
